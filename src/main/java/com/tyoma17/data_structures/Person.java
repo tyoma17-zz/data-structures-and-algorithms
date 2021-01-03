@@ -1,4 +1,4 @@
-package com.tyoma17.data_structures.list;
+package com.tyoma17.data_structures;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -46,19 +46,23 @@ public class LinkedList<E> {
         return head == null;
     }
 
-    public void logList() {
-        log.info("-------- LINKED LIST --------");
+    public String linkedListAsString() {
+
+        StringBuilder stringBuilder = new StringBuilder("\n-------- LINKED LIST --------\n");
+        stringBuilder.append("HEAD\n");
+        stringBuilder.append("↓\n");
+
         Node<E> current = head;
-        log.info("HEAD");
-        log.info("↓");
 
         while (current != null) {
-            log.info(current.getElement());
-            log.info("↓");
+            stringBuilder.append(current.getElement() + "\n");
+            stringBuilder.append("↓\n");
             current = current.getNext();
         }
 
-        log.info("null");
-        log.info("-------- LINKED LIST --------");
+        stringBuilder.append("null\n");
+        stringBuilder.append("-------- LINKED LIST --------");
+
+        return stringBuilder.toString();
     }
 }

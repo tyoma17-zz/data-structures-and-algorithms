@@ -1,6 +1,6 @@
 package com.tyoma17.data_structures.list.linked_list;
 
-import com.tyoma17.data_structures.list.Person;
+import com.tyoma17.data_structures.Person;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

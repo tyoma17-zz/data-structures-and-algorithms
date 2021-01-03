@@ -1,6 +1,6 @@
 package com.tyoma17.data_structures.list.doubly_linked_list;
 
-import com.tyoma17.data_structures.list.Person;
+import com.tyoma17.data_structures.Person;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2

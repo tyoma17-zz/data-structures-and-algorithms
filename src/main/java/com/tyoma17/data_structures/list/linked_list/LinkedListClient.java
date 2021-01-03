@@ -1,6 +1,6 @@
 package com.tyoma17.data_structures.list.linked_list;
 
-import com.tyoma17.data_structures.list.Person;
+import com.tyoma17.data_structures.Person;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
@@ -13,20 +13,23 @@ public class LinkedListClient {
         Person janeDoe = new Person(3, "Jane", "Roe");
 
         LinkedList<Person> persons = new LinkedList<>();
-        persons.logList();
+        log.info(persons.linkedListAsString());
+
         persons.addToFront(johnDoe);
-        persons.logList();
+        log.info(persons.linkedListAsString());
+
         persons.addToFront(richardRoe);
-        persons.logList();
+        log.info(persons.linkedListAsString());
+
         persons.addToFront(janeDoe);
 
         log.info("Linked list is{}empty", persons.isEmpty() ? " " : " not ");
         log.info("Linked list contains of {} persons:", persons.getSize());
-        persons.logList();
+        log.info(persons.linkedListAsString());
 
         log.info("Removing one person from the list...");
         persons.removeFromFont();
         log.info("Linked list contains of {} persons:", persons.getSize());
-        persons.logList();
+        log.info(persons.linkedListAsString());
     }
 }
