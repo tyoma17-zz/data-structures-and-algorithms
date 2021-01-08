@@ -10,7 +10,7 @@ public class LinkedListClient {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
 
         LinkedList<Person> persons = new LinkedList<>();
         log.info(persons.linkedListAsString());
@@ -21,7 +21,7 @@ public class LinkedListClient {
         persons.addToFront(richardRoe);
         log.info(persons.linkedListAsString());
 
-        persons.addToFront(janeDoe);
+        persons.addToFront(janeRoe);
 
         log.info("Linked list is{}empty", persons.isEmpty() ? " " : " not ");
         log.info("Linked list contains of {} persons:", persons.getSize());

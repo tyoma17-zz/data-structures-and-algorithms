@@ -14,7 +14,7 @@ class ArrayQueueClientIT {
     void testArrayQueue() {
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
         Person johnnyRoe = new Person(5, "Johnny", "Roe");
         Person johnSmith = new Person(6, "John", "Smith");
@@ -48,7 +48,7 @@ class ArrayQueueClientIT {
         assertEquals(johnDoe, removedPerson);
         assertEquals(richardRoe, queue.peek());
 
-        queue.add(janeDoe);
+        queue.add(janeRoe);
         assertEquals(2, queue.size());
         assertEquals(4, queue.capacity());
         assertEquals(1, queue.frontElementIndex());
@@ -68,42 +68,42 @@ class ArrayQueueClientIT {
         assertEquals(2, queue.frontElementIndex());
         assertEquals(0, queue.toBeAddedElementIndex());
         assertEquals(richardRoe, removedPerson);
-        assertEquals(janeDoe, queue.peek());
+        assertEquals(janeRoe, queue.peek());
 
         queue.add(johnnyRoe);
         assertEquals(3, queue.size());
         assertEquals(4, queue.capacity());
         assertEquals(2, queue.frontElementIndex());
         assertEquals(1, queue.toBeAddedElementIndex());
-        assertEquals(janeDoe, queue.peek());
+        assertEquals(janeRoe, queue.peek());
 
         queue.add(johnSmith);
         assertEquals(4, queue.size());
         assertEquals(8, queue.capacity());
         assertEquals(0, queue.frontElementIndex());
         assertEquals(4, queue.toBeAddedElementIndex());
-        assertEquals(janeDoe, queue.peek());
+        assertEquals(janeRoe, queue.peek());
 
         queue.add(johnDoe);
         assertEquals(5, queue.size());
         assertEquals(8, queue.capacity());
         assertEquals(0, queue.frontElementIndex());
         assertEquals(5, queue.toBeAddedElementIndex());
-        assertEquals(janeDoe, queue.peek());
+        assertEquals(janeRoe, queue.peek());
 
         queue.add(richardRoe);
         assertEquals(6, queue.size());
         assertEquals(8, queue.capacity());
         assertEquals(0, queue.frontElementIndex());
         assertEquals(6, queue.toBeAddedElementIndex());
-        assertEquals(janeDoe, queue.peek());
+        assertEquals(janeRoe, queue.peek());
 
         removedPerson = queue.remove();
         assertEquals(5, queue.size());
         assertEquals(8, queue.capacity());
         assertEquals(1, queue.frontElementIndex());
         assertEquals(6, queue.toBeAddedElementIndex());
-        assertEquals(janeDoe, removedPerson);
+        assertEquals(janeRoe, removedPerson);
         assertEquals(babyDoe, queue.peek());
 
         removedPerson = queue.remove();

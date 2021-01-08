@@ -15,7 +15,7 @@ class JdkLinkedListClientIT {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
 
         LinkedList<Person> persons = new LinkedList<>();
@@ -28,8 +28,8 @@ class JdkLinkedListClientIT {
         assertEquals(persons.getLast(), richardRoe);
         assertEquals(2, persons.size());
 
-        persons.addFirst(janeDoe);
-        assertEquals(persons.getFirst(), janeDoe);
+        persons.addFirst(janeRoe);
+        assertEquals(persons.getFirst(), janeRoe);
         assertEquals(3, persons.size());
 
         persons.addLast(babyDoe);

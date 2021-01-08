@@ -10,7 +10,7 @@ public class DoublyLinkedListClient {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
 
         DoublyLinkedList<Person> persons = new DoublyLinkedList<>();
@@ -19,7 +19,7 @@ public class DoublyLinkedListClient {
         persons.logList();
         persons.addToEnd(richardRoe);
         persons.logList();
-        persons.addToFront(janeDoe);
+        persons.addToFront(janeRoe);
         persons.logList();
         persons.addToEnd(babyDoe);
 

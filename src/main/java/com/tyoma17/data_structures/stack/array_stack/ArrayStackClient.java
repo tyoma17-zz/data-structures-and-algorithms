@@ -10,7 +10,7 @@ public class ArrayStackClient {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
         Person johnnyRoe = new Person(5, "Johnny", "Roe");
         Person johnSmith = new Person(6, "John", "Smith");
@@ -27,8 +27,8 @@ public class ArrayStackClient {
         stack.push(richardRoe);
         log.info(stack.stackAsString());
 
-        log.info("Pushing {} to stack...", janeDoe);
-        stack.push(janeDoe);
+        log.info("Pushing {} to stack...", janeRoe);
+        stack.push(janeRoe);
         log.info(stack.stackAsString());
 
         log.info("Pushing {} to stack...", babyDoe);

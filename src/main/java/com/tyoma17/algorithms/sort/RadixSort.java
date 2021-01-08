@@ -1,4 +1,4 @@
-package com.tyoma17.algorithms;
+package com.tyoma17.algorithms.sort;
 
 import com.tyoma17.util.Helper;
 import lombok.extern.log4j.Log4j2;

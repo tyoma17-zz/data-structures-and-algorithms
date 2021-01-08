@@ -11,7 +11,7 @@ class DoublyLinkedListClientIT {
     void testDoublyLinkedList() {
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
 
         DoublyLinkedList<Person> persons = new DoublyLinkedList<>();
@@ -33,7 +33,7 @@ class DoublyLinkedListClientIT {
         assertEquals(johnDoeNode, richardRoeNode.getPrevious());
         assertEquals(2, persons.getSize());
 
-        persons.addToFront(janeDoe);
+        persons.addToFront(janeRoe);
         Node<Person> janeRoeNode = persons.getHead();
         assertNull(janeRoeNode.getPrevious());
         assertEquals(johnDoeNode, janeRoeNode.getNext());

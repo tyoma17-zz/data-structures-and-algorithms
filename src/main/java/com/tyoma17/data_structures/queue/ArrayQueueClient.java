@@ -10,7 +10,7 @@ public class ArrayQueueClient {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
         Person johnnyRoe = new Person(5, "Johnny", "Roe");
         Person johnSmith = new Person(6, "John", "Smith");
@@ -32,8 +32,8 @@ public class ArrayQueueClient {
         log.info(queue.queueAsString());
         log.info("Removed person: {}", removedPerson);
 
-        log.info("Adding {} to queue...", janeDoe);
-        queue.add(janeDoe);
+        log.info("Adding {} to queue...", janeRoe);
+        queue.add(janeRoe);
         log.info(queue.queueAsString());
 
         log.info("Adding {} to queue...", babyDoe);

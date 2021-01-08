@@ -15,7 +15,7 @@ class ArrayStackClientIT {
 
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
         Person babyDoe = new Person(4, "Baby", "Doe");
         Person johnnyRoe = new Person(5, "Johnny", "Roe");
         Person johnSmith = new Person(6, "John", "Smith");
@@ -33,10 +33,10 @@ class ArrayStackClientIT {
         assertEquals(2, stack.capacity());
         assertEquals(richardRoe, stack.peek());
 
-        stack.push(janeDoe);
+        stack.push(janeRoe);
         assertEquals(3, stack.size());
         assertEquals(4, stack.capacity());
-        assertEquals(janeDoe, stack.peek());
+        assertEquals(janeRoe, stack.peek());
 
         stack.push(babyDoe);
         assertEquals(4, stack.size());
@@ -69,12 +69,12 @@ class ArrayStackClientIT {
         assertEquals(3, stack.size());
         assertEquals(4, stack.capacity());
         assertEquals(babyDoe, poppedPerson);
-        assertEquals(janeDoe, stack.peek());
+        assertEquals(janeRoe, stack.peek());
 
         poppedPerson = stack.pop();
         assertEquals(2, stack.size());
         assertEquals(2, stack.capacity());
-        assertEquals(janeDoe, poppedPerson);
+        assertEquals(janeRoe, poppedPerson);
         assertEquals(richardRoe, stack.peek());
 
         poppedPerson = stack.pop();

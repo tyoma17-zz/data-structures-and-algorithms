@@ -11,7 +11,7 @@ class LinkedListClientIT {
     void testLinkedList() {
         Person johnDoe = new Person(1, "John", "Doe");
         Person richardRoe = new Person(2, "Richard", "Roe");
-        Person janeDoe = new Person(3, "Jane", "Roe");
+        Person janeRoe = new Person(3, "Jane", "Roe");
 
         LinkedList<Person> persons = new LinkedList<>();
         assertTrue(persons.isEmpty());
@@ -29,10 +29,10 @@ class LinkedListClientIT {
         assertEquals(richardRoeNode.getNext(), johnDoeNode);
         assertEquals(2, persons.getSize());
 
-        persons.addToFront(janeDoe);
-        Node<Person> janeDoeNode = persons.getHead();
-        assertEquals(janeDoeNode.getElement(), janeDoe);
-        assertEquals(janeDoeNode.getNext(), richardRoeNode);
+        persons.addToFront(janeRoe);
+        Node<Person> janeRoeNode = persons.getHead();
+        assertEquals(janeRoeNode.getElement(), janeRoe);
+        assertEquals(janeRoeNode.getNext(), richardRoeNode);
 
         assertFalse(persons.isEmpty());
         assertEquals(3, persons.getSize());

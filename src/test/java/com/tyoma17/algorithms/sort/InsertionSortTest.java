@@ -1,4 +1,4 @@
-package com.tyoma17.algorithms;
+package com.tyoma17.algorithms.sort;
 
 import com.tyoma17.util.TestHelper;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class InsertionSortTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/arrays.csv", numLinesToSkip = 1, delimiter = ';')
+    @CsvFileSource(resources = "/sort/arrays.csv", numLinesToSkip = 1, delimiter = ';')
     void sort(String unsortedArrayAsString, String sortedArrayAsString) {
 
         int[] unsortedArray = TestHelper.convertArrayAsStringToIntArray(unsortedArrayAsString);

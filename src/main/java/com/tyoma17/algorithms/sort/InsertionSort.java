@@ -1,4 +1,4 @@
-package com.tyoma17.algorithms;
+package com.tyoma17.algorithms.sort;
 
 public class InsertionSort {
 
